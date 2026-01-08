@@ -1,54 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.asrsavevid.my.id/</loc>
-    <lastmod>2026-01-08</lastmod>
+    <loc>https://asrsavevid.my.id/</loc>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://www.asrsavevid.my.id/index.html</loc>
+    <loc>https://asrsavevid.my.id/index.html</loc>
     <priority>1.00</priority>
   </url>
 
   <url>
-    <loc>https://www.asrsavevid.my.id/blog.html</loc>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://www.asrsavevid.my.id/cara-download-tiktok.html</loc>
+    <loc>https://asrsavevid.my.id/blog.html</loc>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.asrsavevid.my.id/cara-download-instagram.html</loc>
+    <loc>https://asrsavevid.my.id/cara-download-tiktok.html</loc>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.asrsavevid.my.id/cara-download-youtube.html</loc>
+    <loc>https://asrsavevid.my.id/cara-download-instagram.html</loc>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.asrsavevid.my.id/cara-download-twitter.html</loc>
+    <loc>https://asrsavevid.my.id/cara-download-youtube.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://asrsavevid.my.id/cara-download-twitter.html</loc>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://www.asrsavevid.my.id/tiktok.html</loc>
-    <priority>0.80</priority>
+    <loc>https://asrsavevid.my.id/tiktok.html</loc>
+    <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://www.asrsavevid.my.id/instagram.html</loc>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.asrsavevid.my.id/facebook.html</loc>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.asrsavevid.my.id/youtube.html</loc>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.asrsavevid.my.id/twitter.html</loc>
-    <priority>0.80</priority>
+    <loc>https://asrsavevid.my.id/instagram.html</loc>
+    <priority>0.64</priority>
   </url>
 </urlset>
