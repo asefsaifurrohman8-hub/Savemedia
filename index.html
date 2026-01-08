@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Download videos from TikTok, Instagram, Facebook, YouTube, and Twitter in one place using ASR.">
+    <title>ASR - All Social Retriever | Home</title>
+    <style>
+        /* CSS RESET & VARIABLES */
+        :root {
+            --primary: #FF6600; /* Orange */
+            --primary-dark: #cc5200;
+            --text: #333333;
+            --bg: #F9F9F9;
+            --white: #FFFFFF;
+            --gray: #e0e0e0;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        
+        body { background-color: var(--bg); color: var(--text); line-height: 1.6; }
+        
+        /* LAYOUT UTILS */
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        
+        /* HEADER */
+        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; height: 70px; }
+        .brand { display: flex; flex-direction: column; }
+        .logo { font-size: 24px; font-weight: 800; color: var(--primary); letter-spacing: -1px; }
+        .sub-logo { font-size: 10px; color: #777; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; margin-top: -5px; }
+        .nav-links { display: flex; gap: 20px; font-size: 14px; font-weight: 600; }
+        .nav-links a:hover { color: var(--primary); }
+        
+        /* HERO SECTION */
+        .hero { text-align: center; padding: 80px 20px; background: var(--white); }
+        .hero h1 { font-size: 3rem; margin-bottom: 15px; color: var(--text); }
+        .hero p { font-size: 1.1rem; color: #666; max-width: 600px; margin: 0 auto 30px auto; }
+        .btn { display: inline-block; background: var(--primary); color: var(--white); padding: 12px 30px; border-radius: 6px; font-weight: 600; border: none; cursor: pointer; }
+        .btn:hover { background: var(--primary-dark); }
+
+        /* ADS SLOT STYLE */
+        .ads-slot { width: 100%; height: 100px; background-color: #f0f0f0; border: 2px dashed #ddd; display: flex; align-items: center; justify-content: center; color: #999; margin: 30px 0; font-size: 14px; }
+        
+        /* PLATFORM GRID */
+        .platform-section { padding: 40px 0; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 20px; }
+        .card { background: var(--white); padding: 30px; border-radius: 12px; text-align: center; border: 1px solid var(--gray); transition: transform 0.2s, box-shadow 0.2s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.08); border-color: var(--primary); }
+        .card h3 { margin-bottom: 10px; font-size: 1.2rem; }
+        .card span { font-size: 0.9rem; color: var(--primary); font-weight: 600; }
+
+        /* HOW IT WORKS */
+        .how-it-works { padding: 60px 0; background: var(--white); text-align: center; }
+        .steps { display: flex; justify-content: center; gap: 40px; margin-top: 40px; flex-wrap: wrap; }
+        .step-item { flex: 1; min-width: 250px; max-width: 300px; }
+        .step-num { width: 40px; height: 40px; background: var(--primary); color: var(--white); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px auto; font-weight: bold; }
+
+        /* FOOTER */
+        footer { background: #222; color: #fff; padding: 40px 0; text-align: center; margin-top: auto; }
+        footer .f-logo { font-weight: bold; font-size: 1.2rem; color: var(--primary); }
+        footer p { color: #888; font-size: 0.9rem; margin-top: 10px; }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .nav-links { display: none; } /* Simplified for mobile */
+            .hero h1 { font-size: 2rem; }
+            .steps { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="brand">
+                <span class="logo">ASR</span>
+                <span class="sub-logo">All Social Retriever</span>
+            </a>
+            <nav class="nav-links">
+                <a href="tiktok.html">TikTok</a>
+                <a href="instagram.html">Instagram</a>
+                <a href="facebook.html">Facebook</a>
+                <a href="youtube.html">YouTube</a>
+                <a href="twitter.html">Twitter</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>All Social Retriever</h1>
+                <p>Download videos from TikTok, Instagram, Facebook, YouTube, and Twitter in one place. Fast, free, and unlimited.</p>
+                <a href="#platforms" class="btn">Start Download</a>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="ads-slot ads-top">Advertisement Space (Top)</div>
+        </div>
+
+        <section id="platforms" class="platform-section">
+            <div class="container">
+                <div class="grid">
+                    <a href="tiktok.html" class="card">
+                        <h3>TikTok</h3>
+                        <span>Download Video</span>
+                    </a>
+                    <a href="instagram.html" class="card">
+                        <h3>Instagram</h3>
+                        <span>Download Reels/Post</span>
+                    </a>
+                    <a href="facebook.html" class="card">
+                        <h3>Facebook</h3>
+                        <span>Download Video</span>
+                    </a>
+                    <a href="youtube.html" class="card">
+                        <h3>YouTube</h3>
+                        <span>Download Video</span>
+                    </a>
+                    <a href="twitter.html" class="card">
+                        <h3>Twitter / X</h3>
+                        <span>Download Video</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="ads-slot ads-middle">Advertisement Space (Middle)</div>
+        </div>
+
+        <section class="how-it-works">
+            <div class="container">
+                <h2>How It Works</h2>
+                <div class="steps">
+                    <div class="step-item">
+                        <div class="step-num">1</div>
+                        <h3>Paste Link</h3>
+                        <p>Copy the video URL from the social media app.</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-num">2</div>
+                        <h3>Choose Platform</h3>
+                        <p>Select the relevant tool on our website.</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-num">3</div>
+                        <h3>Download</h3>
+                        <p>Click download and save your file instantly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="ads-slot ads-bottom">Advertisement Space (Bottom)</div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="f-logo">ASR – All Social Retriever</div>
+            <p>Free online video downloader for all social media platforms.</p>
+            <p>&copy; 2024 ASR. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

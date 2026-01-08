@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Download YouTube videos and MP3s.">
+    <title>ASR - YouTube Downloader</title>
+    <style>
+        :root { --primary: #FF6600; --text: #333; --bg: #F9F9F9; --white: #FFF; }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: sans-serif; }
+        body { background: var(--bg); color: var(--text); min-height: 100vh; display: flex; flex-direction: column; }
+        .container { max-width: 800px; margin: 0 auto; padding: 0 20px; }
+        a { text-decoration: none; color: inherit; }
+        header { background: var(--white); padding: 15px 0; border-bottom: 1px solid #eee; }
+        .nav-head { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-weight: 800; color: var(--primary); font-size: 1.2rem; }
+        .back-link { font-size: 0.9rem; color: #777; }
+        .downloader-box { background: var(--white); padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-top: 20px; text-align: center; }
+        h1 { font-size: 1.8rem; margin-bottom: 10px; }
+        .subtitle { color: #666; margin-bottom: 30px; font-size: 0.95rem; }
+        .input-group { display: flex; gap: 10px; flex-direction: column; }
+        input[type="text"] { padding: 15px; border: 2px solid #eee; border-radius: 6px; font-size: 1rem; outline: none; }
+        input[type="text"]:focus { border-color: var(--primary); }
+        button { padding: 15px; background: var(--primary); color: var(--white); border: none; border-radius: 6px; font-weight: bold; cursor: pointer; font-size: 1rem; }
+        button:hover { background: #cc5200; }
+        .ads-slot { width: 100%; height: 100px; background: #f0f0f0; border: 2px dashed #ddd; display: flex; justify-content: center; align-items: center; color: #999; margin: 20px 0; }
+        footer { margin-top: auto; padding: 20px; text-align: center; font-size: 0.8rem; color: #888; border-top: 1px solid #eee; background: #fff; }
+        @media(min-width: 600px) { .input-group { flex-direction: row; } input[type="text"] { flex: 1; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container nav-head">
+            <a href="index.html" class="logo">ASR</a>
+            <a href="index.html" class="back-link">Back to Home</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="ads-slot ads-top">Ad Space (Top)</div>
+        <section class="downloader-box">
+            <h1>YouTube Video Downloader</h1>
+            <p class="subtitle">Download YouTube videos using ASR – All Social Retriever.</p>
+            <div class="input-group">
+                <input type="text" id="urlInput" placeholder="Paste YouTube link here...">
+                <button onclick="processDownload()">Download Now</button>
+            </div>
+        </section>
+        <div class="ads-slot ads-middle">Ad Space (Middle)</div>
+        <div class="ads-slot ads-bottom">Ad Space (Bottom)</div>
+    </main>
+
+    <footer>ASR – All Social Retriever. Free YouTube Downloader.</footer>
+
+    <script>
+        /**
+         * Redirect Logic
+         * Target: Y2mate.com
+         */
+        function processDownload() {
+            var input = document.getElementById('urlInput').value;
+            if (!input) { alert('Please paste a YouTube link!'); return; }
+            
+            // Redirect ke y2mate.com
+            // Y2mate biasanya support query param
+            window.location.href = "https://www.y2mate.com/youtube/" + encodeURIComponent(input);
+        }
+    </script>
+</body>
+</html>
